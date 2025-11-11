@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@import "./reset.css";
+
+
+
+
+@theme {
+  --color-background: lab(2.75381% 0 0);
+  --color-foreground: lab(98.26% 0 0);
+
+  --color-card: lab(7.78201% -.0000149012 0);
+  --color-card-foreground: lab(98.26% 0 0);
+
+  --color-popover: lab(15.204% 0 -.00000596046);
+  --color-popover-foreground: lab(98.26% 0 0);
+
+  --color-primary: lab(90.952% 0 -.0000119209);
+  --color-primary-foreground: lab(7.78201% -.0000149012 0);
+
+  --color-secondary: lab(15.204% 0 -.00000596046);
+  --color-secondary-foreground: lab(98.26% 0 0);
+
+  --color-muted: lab(15.204% 0 -.00000596046);
+  --color-muted-foreground: lab(66.128% -.0000298023 .0000119209);
+
+  --color-accent: lab(27.036% 0 0);
+  --color-accent-foreground: lab(98.26% 0 0);
+
+  --color-destructive: lab(63.7053% 60.745 31.3109);
+
+  --color-border: lab(100% 0 0 / .1);
+  --color-input: lab(100% 0 0 / .15);
+  --color-ring: lab(48.496% 0 0);
+
+  --color-sidebar: lab(7.78201% -.0000149012 0);
+  --color-sidebar-foreground: lab(98.26% 0 0);
+
+  --color-sidebar-primary: lab(36.9089% 35.0961 -85.6872);
+  --color-sidebar-primary-foreground: lab(98.26% 0 0);
+
+  --color-sidebar-accent: lab(15.204% 0 -.00000596046);
+  --color-sidebar-accent-foreground: lab(98.26% 0 0);
+
+  --color-sidebar-border: lab(100% 0 0 / .1);
+  --color-sidebar-ring: lab(34.924% 0 0);
+
+  --color-surface: lab(7.22637% -.0000149012 0);
+  --color-surface-foreground: lab(66.128% -.0000298023 .0000119209);
+
+  --color-code-highlight: lab(15.32% 0 0);
+  --color-code-number: lab(67.52% -.0000298023 0);
+
+  --color-selection: lab(90.952% 0 -.0000119209);
+  --color-selection-foreground: lab(7.78201% -.0000149012 0);
+
+
+  --soft-shadow: 3px 0px 10px -1px rgba(0,0,0,0.75);
+}
+
+
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-display: swap;
+}
