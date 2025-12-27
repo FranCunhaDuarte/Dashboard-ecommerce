@@ -1,14 +1,14 @@
 import { createRoot } from 'react-dom/client'
 import './styles/global.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from './App.tsx';
 import { Home } from './components/sections/Home.tsx';
+import { Dashboard } from './pages/Dashboard.tsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Dashboard />,
     children: [
       {
         path: '/',
@@ -21,5 +21,5 @@ const router = createBrowserRouter([
 
 
 createRoot(document.getElementById('root')!).render(
-  <RouterProvider router={router} />,
+    <RouterProvider router={router} />,
 )
