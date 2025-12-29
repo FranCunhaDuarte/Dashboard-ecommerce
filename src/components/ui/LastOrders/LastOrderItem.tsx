@@ -5,11 +5,11 @@ export const LastOrderItem = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const menuRef = useRef(null)
+    const menuRef = useRef<HTMLDivElement | null>(null)
 
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
-            if (menuRef.current && !menuRef.current.contains(e.target)) {
+            if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
                 setIsOpen(false);
             }
         }
